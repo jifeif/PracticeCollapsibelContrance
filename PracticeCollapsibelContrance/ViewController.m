@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "UIView+FDCollapsibleConstraints.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *aImageView;
+@property (weak, nonatomic) IBOutlet UIButton *aBtn;
 
 @end
 
@@ -23,6 +25,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)clickMethod:(UIButton *)sender {
+    self.aBtn.selected = !self.aBtn.selected;
+    NSLog(@"%d", sender.selected);
+    self.aImageView.fd_collapsed = self.aBtn.selected;
+    [self.view layoutSubviews];
 }
 
 

@@ -15,6 +15,10 @@
 		0F91064E1DA88E0100C7974E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F91064C1DA88E0100C7974E /* LaunchScreen.storyboard */; };
 		0F9106591DA88E0100C7974E /* PracticeCollapsibelContranceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9106581DA88E0100C7974E /* PracticeCollapsibelContranceTests.m */; };
 		0F9106641DA88E0100C7974E /* PracticeCollapsibelContranceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9106631DA88E0100C7974E /* PracticeCollapsibelContranceUITests.m */; };
+		0F9106781DA8902100C7974E /* UIView+FDCollapsibleConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9106771DA8902100C7974E /* UIView+FDCollapsibleConstraints.m */; };
+		0F91067B1DA8BD2F00C7974E /* FFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91067A1DA8BD2F00C7974E /* FFTableViewController.m */; };
+		0F91067E1DA8BD4E00C7974E /* FFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91067D1DA8BD4E00C7974E /* FFTableViewCell.m */; };
+		0FD6E0991DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		0F91065F1DA88E0100C7974E /* PracticeCollapsibelContranceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeCollapsibelContranceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9106631DA88E0100C7974E /* PracticeCollapsibelContranceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticeCollapsibelContranceUITests.m; sourceTree = "<group>"; };
 		0F9106651DA88E0100C7974E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F9106761DA8902100C7974E /* UIView+FDCollapsibleConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FDCollapsibleConstraints.h"; sourceTree = "<group>"; };
+		0F9106771DA8902100C7974E /* UIView+FDCollapsibleConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDCollapsibleConstraints.m"; sourceTree = "<group>"; };
+		0F9106791DA8BD2F00C7974E /* FFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTableViewController.h; sourceTree = "<group>"; };
+		0F91067A1DA8BD2F00C7974E /* FFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTableViewController.m; sourceTree = "<group>"; };
+		0F91067C1DA8BD4E00C7974E /* FFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTableViewCell.h; sourceTree = "<group>"; };
+		0F91067D1DA8BD4E00C7974E /* FFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTableViewCell.m; sourceTree = "<group>"; };
+		0FD6E0971DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,16 @@
 		0F91063D1DA88E0100C7974E /* PracticeCollapsibelContrance */ = {
 			isa = PBXGroup;
 			children = (
+				0FD6E0961DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell */,
+				0F9106751DA8902100C7974E /* CollapsiableView */,
 				0F9106411DA88E0100C7974E /* AppDelegate.h */,
 				0F9106421DA88E0100C7974E /* AppDelegate.m */,
 				0F9106441DA88E0100C7974E /* ViewController.h */,
 				0F9106451DA88E0100C7974E /* ViewController.m */,
+				0F9106791DA8BD2F00C7974E /* FFTableViewController.h */,
+				0F91067A1DA8BD2F00C7974E /* FFTableViewController.m */,
+				0F91067C1DA8BD4E00C7974E /* FFTableViewCell.h */,
+				0F91067D1DA8BD4E00C7974E /* FFTableViewCell.m */,
 				0F9106471DA88E0100C7974E /* Main.storyboard */,
 				0F91064A1DA88E0100C7974E /* Assets.xcassets */,
 				0F91064C1DA88E0100C7974E /* LaunchScreen.storyboard */,
@@ -138,6 +156,24 @@
 				0F9106651DA88E0100C7974E /* Info.plist */,
 			);
 			path = PracticeCollapsibelContranceUITests;
+			sourceTree = "<group>";
+		};
+		0F9106751DA8902100C7974E /* CollapsiableView */ = {
+			isa = PBXGroup;
+			children = (
+				0F9106761DA8902100C7974E /* UIView+FDCollapsibleConstraints.h */,
+				0F9106771DA8902100C7974E /* UIView+FDCollapsibleConstraints.m */,
+			);
+			path = CollapsiableView;
+			sourceTree = "<group>";
+		};
+		0FD6E0961DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E0971DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.h */,
+				0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */,
+			);
+			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +243,7 @@
 				TargetAttributes = {
 					0F91063A1DA88E0100C7974E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q2TBL8EXRY;
 						ProvisioningStyle = Automatic;
 					};
 					0F9106531DA88E0100C7974E = {
@@ -273,8 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9106781DA8902100C7974E /* UIView+FDCollapsibleConstraints.m in Sources */,
+				0FD6E0991DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				0F9106461DA88E0100C7974E /* ViewController.m in Sources */,
 				0F9106431DA88E0100C7974E /* AppDelegate.m in Sources */,
+				0F91067E1DA8BD4E00C7974E /* FFTableViewCell.m in Sources */,
+				0F91067B1DA8BD2F00C7974E /* FFTableViewController.m in Sources */,
 				0F9106401DA88E0100C7974E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2TBL8EXRY;
 				INFOPLIST_FILE = PracticeCollapsibelContrance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9188.PracticeCollapsibelContrance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2TBL8EXRY;
 				INFOPLIST_FILE = PracticeCollapsibelContrance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9188.PracticeCollapsibelContrance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +550,7 @@
 				0F91066A1DA88E0100C7974E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F91066B1DA88E0100C7974E /* Build configuration list for PBXNativeTarget "PracticeCollapsibelContranceTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +559,7 @@
 				0F91066D1DA88E0100C7974E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F91066E1DA88E0100C7974E /* Build configuration list for PBXNativeTarget "PracticeCollapsibelContranceUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +568,7 @@
 				0F9106701DA88E0100C7974E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
