@@ -19,6 +19,7 @@
 		0F91067B1DA8BD2F00C7974E /* FFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91067A1DA8BD2F00C7974E /* FFTableViewController.m */; };
 		0F91067E1DA8BD4E00C7974E /* FFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91067D1DA8BD4E00C7974E /* FFTableViewCell.m */; };
 		0FD6E0991DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */; };
+		0FD6E09C1DA8D5CA00F01239 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD6E09B1DA8D5CA00F01239 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0F91067D1DA8BD4E00C7974E /* FFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTableViewCell.m; sourceTree = "<group>"; };
 		0FD6E0971DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		0FD6E09B1DA8D5CA00F01239 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD6E09C1DA8D5CA00F01239 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 				0F9106571DA88E0100C7974E /* PracticeCollapsibelContranceTests */,
 				0F9106621DA88E0100C7974E /* PracticeCollapsibelContranceUITests */,
 				0F91063C1DA88E0100C7974E /* Products */,
+				0FD6E09A1DA8D5CA00F01239 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +178,14 @@
 				0FD6E0981DA8C5BA00F01239 /* UITableView+FDTemplateLayoutCell.m */,
 			);
 			path = "UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		0FD6E09A1DA8D5CA00F01239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E09B1DA8D5CA00F01239 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
